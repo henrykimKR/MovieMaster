@@ -17,12 +17,12 @@ export default function MovieDetails({ movie }) {
           )}
           <Col md>
             <strong>Directed By: </strong>
-            {movie.directors.join(", ")}
+            {movie.directors ? movie.directors.join(", ") : "N/A"}
             <br />
             <br />
             <p>{movie.fullplot}</p>
             <strong>Cast: </strong>
-            {movie.cast.join(", ")}
+            {movie.cast ? movie.cast.join(", ") : "N/A"}
             <br />
             <br />
             <strong>Awards: </strong>
