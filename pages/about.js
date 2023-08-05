@@ -9,7 +9,7 @@ export function getStaticProps() {
   // Call an external API endpoint to get posts
   return new Promise((resolve, reject) => {
     fetch(
-      "https://tiny-pear-chameleon-belt.cyclic.app/api/movies/573a139af29313caabcf0d74"
+      "https://plum-frightened-bream.cyclic.app/api/movies/573a139af29313caabcf0d74"
     )
       .then((res) => res.json())
       .then((data) => {

@@ -9,7 +9,7 @@ export default function Movie() {
   const { title } = router.query;
 
   const { data, error } = useSWR(
-    `https://tiny-pear-chameleon-belt.cyclic.app/api/movies?page=1&perPage=10&title=${title}`
+    `https://plum-frightened-bream.cyclic.app/api/movies?page=1&perPage=10&title=${title}`
   );
 
   if (!data) {

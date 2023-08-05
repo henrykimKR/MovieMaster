@@ -21,7 +21,7 @@ export default function Home() {
   const [pageData, setPageData] = useState([]);
 
   const { data, error } = useSWR(
-    `https://tiny-pear-chameleon-belt.cyclic.app/api/movies?page=${page}&perPage=10`
+    `https://plum-frightened-bream.cyclic.app/api/movies?page=${page}&perPage=10`
   );
 
   useEffect(() => {
