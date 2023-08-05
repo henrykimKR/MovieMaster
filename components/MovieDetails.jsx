@@ -26,10 +26,10 @@ export default function MovieDetails({ movie }) {
             <br />
             <br />
             <strong>Awards: </strong>
-            {movie.awards.text}
+            {movie.awards && movie.awards.text ? movie.awards.text : "N/A"}
             <br />
-            <strong>IMDB Rating: </strong> {movie.imdb.rating} (
-            {movie.imdb.votes})
+            <strong>IMDB Rating: </strong> {movie.imdb?.rating} (
+            {movie.imdb?.votes})
           </Col>
         </Row>
       </Container>
